@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="DAFTAR NILAI"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text="Matakuliah: Mobile Programming" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="375dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text="UNIVERSITAS BUDI LUHUR - 2024/2025" />
+
+    <RadioGroup
+        android:id="@+id/semesterGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester:" />
+
+        <RadioButton
+            android:id="@+id/semesterGasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gasal" />
+
+        <RadioButton
+            android:id="@+id/semesterGenap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genap" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inputNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input NIM"
+        android:inputType="number"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Nama Lengkap"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="NILAI:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputPresensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Presensi"
+        android:inputType="number"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputTugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tugas"
+        android:inputType="number"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputUTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UTS"
+        android:inputType="number"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputUAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UAS"
+        android:inputType="number"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/hitungNilaiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#6200EA"
+        android:paddingTop="16dp"
+        android:text="Hitung Nilai Akhir"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
